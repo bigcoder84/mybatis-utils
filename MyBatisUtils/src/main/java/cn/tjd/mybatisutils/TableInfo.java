@@ -177,8 +177,8 @@ public class TableInfo extends ArrayList<TableInfo.ColumnInfo> {
         return str.toString();
     }
 
-    public static TableInfo tableInfo(String ip, String username, String passwd, String databaseName, String tableName) throws SQLException {
-        String url = "jdbc:sqlserver://" + ip + ":1433;DatabaseName=" + databaseName;
+    public static TableInfo tableInfo(String ip, String port, String username, String passwd, String databaseName, String tableName) throws SQLException {
+        String url = "jdbc:sqlserver://" + ip + ":" + port + ";DatabaseName=" + databaseName;
         Connection connection = DriverManager.getConnection(url, username, passwd);
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT \n" +
                 "        col.name AS colname ,  \n" +

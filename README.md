@@ -19,10 +19,16 @@ DATABASE_NAME:test
 TABLE_NAME:t_emr_tracker_card_info
 ```
 
-Open the terminal and execute the following command：
+You can also specify the information needed to connect to the database through options such as` --ip` `--port` `--table`,Please use `-help` to view the detailed parameters.
 
 ```shell
-$ java -jar MyBatisUtils-0.1-beta.jar -type
+$ java -jar MyBatisUtils-0.2.1-beta.jar --ip 192.168.0.1 --port 3306
+```
+
+Specific SQL statements can be generated using options such as：` -i` `-u` `-f`
+
+```shell
+$ java -jar MyBatisUtils-0.2.1-beta.jar -option
 ```
 
 Type has the following options:
