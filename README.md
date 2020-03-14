@@ -14,12 +14,12 @@ USERNAME:admin
 #Pwssword
 PASSWD:123
 #Database name
-DATABASE_NAME:test
+DATABASE:test
 #Table name
-TABLE_NAME:t_emr_tracker_card_info
+TABLE:t_emr_tracker_card_info
 ```
 
-You can also specify the information needed to connect to the database through options such as` --ip` `--port` `--table`,Please use `-help` to view the detailed parameters.
+You can also specify the information needed to connect to the database through options such as` --ip` `--port` `--table`：
 
 ```shell
 $ java -jar MyBatisUtils-0.2.1-beta.jar --ip 192.168.0.1 --port 3306
